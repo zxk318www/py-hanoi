@@ -10,7 +10,7 @@ def hanoi(n,x,y,z):
         #再讲n-1个盘子从y移动到z
         hanoi(n-1,y,x,z)
 
-
+# 递归实现汉诺塔
 num = input("请输入汉诺塔层数\n")
 if num.isdigit():
     hanoi(int(num),'X','Y','Z')
